@@ -1,4 +1,4 @@
-References:
+**References:**
 1.	Paszke, A., et al. “PyTorch: An Imperative Style, High-Performance Deep Learning Library.” NeurIPS, 2019. https://arxiv.org/abs/1912.01703 
 2.	PyTorch Distributed Documentation: https://pytorch.org/docs/stable/distributed.html
 3.	Sergeev, A., & Del Balso, M. “Horovod: Fast and Easy Distributed Deep Learning in TensorFlow.” arXiv:1802.05799, 2018. https://arxiv.org/abs/1802.05799 

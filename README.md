@@ -7,7 +7,9 @@ The rapid advancement of deep learning has made multi-GPU and distributed system
 ### Objective:
 Effectively training deep neural networks across multiple GPUs is increasingly critical for modern high-performance computing. This project systematically compares three distributed deep learning training approaches on a multi-GPU platform:
   **1.	PyTorch Distributed Data Parallel (DDP):** Baseline, full model replication with AllReduce gradient sync via NCCL
+  
   **2.	PyTorch FSDP (Fully Sharded Data Parallel):** Shards model parameters, gradients, and optimizer states across GPUs instead of replicating them, fundamentally different communication pattern (gather before forward, reduce-scatter after backward)
+  
   **3.	DeepSpeed ZeRO:** Microsoft's memory-efficient distributed training with partitioned optimizer states and gradients, different communication strategy from both DDP and FSDP
 
 The experiments will be conducted on the UTSA ARC cluster using GPUs. A standard image classification task will be used to ensure controlled and reproducible evaluation.

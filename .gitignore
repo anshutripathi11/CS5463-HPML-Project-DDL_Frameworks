@@ -1,0 +1,6 @@
+Algo 1.zip
+Algo 1/data/
+*.zip
+*.tar.gz
+logs/
+__pycache__/

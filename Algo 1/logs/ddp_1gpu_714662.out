@@ -1,0 +1,53 @@
+==========================================
+  DDP Baseline — 1 GPU (V100S-32GB)
+  Job ID : 714662
+  Node   : gpu002
+==========================================
+Tesla V100S-PCIE-32GB, 32768 MiB, 545.23.08
+PyTorch 2.5.1+cu121, CUDA 12.1, GPUs: 1
+============================================================
+  Method 1: PyTorch DDP (FP32 Baseline)
+  World size : 1 GPU(s)
+  Per-GPU BS : 128
+  Global BS  : 128
+  Epochs     : 30
+  LR         : 0.1
+============================================================
+Downloading https://www.cs.toronto.edu/~kriz/cifar-10-python.tar.gz to ./data/cifar-10-python.tar.gz
+Extracting ./data/cifar-10-python.tar.gz to ./data
+Files already downloaded and verified
+Epoch   1/30 | Time 17.03s | Compute 16.26s | Comm 0.24s | Train Acc 31.19% | Val Acc 42.99% | Mem 1004MB
+Epoch   2/30 | Time 14.96s | Compute 14.60s | Comm 0.15s | Train Acc 49.11% | Val Acc 55.11% | Mem 1004MB
+Epoch   3/30 | Time 15.08s | Compute 14.69s | Comm 0.16s | Train Acc 61.64% | Val Acc 62.11% | Mem 1004MB
+Epoch   4/30 | Time 15.10s | Compute 14.73s | Comm 0.15s | Train Acc 70.14% | Val Acc 67.26% | Mem 1004MB
+Epoch   5/30 | Time 15.12s | Compute 14.72s | Comm 0.16s | Train Acc 75.73% | Val Acc 71.97% | Mem 1004MB
+Epoch   6/30 | Time 15.16s | Compute 14.79s | Comm 0.16s | Train Acc 79.04% | Val Acc 75.39% | Mem 1004MB
+Epoch   7/30 | Time 15.22s | Compute 14.84s | Comm 0.16s | Train Acc 81.04% | Val Acc 78.18% | Mem 1004MB
+Epoch   8/30 | Time 15.17s | Compute 14.79s | Comm 0.16s | Train Acc 82.76% | Val Acc 80.61% | Mem 1004MB
+Epoch   9/30 | Time 15.25s | Compute 14.85s | Comm 0.18s | Train Acc 83.57% | Val Acc 80.80% | Mem 1004MB
+Epoch  10/30 | Time 15.23s | Compute 14.82s | Comm 0.18s | Train Acc 84.84% | Val Acc 82.16% | Mem 1004MB
+Epoch  11/30 | Time 15.27s | Compute 14.88s | Comm 0.18s | Train Acc 85.67% | Val Acc 80.75% | Mem 1004MB
+Epoch  12/30 | Time 15.18s | Compute 14.79s | Comm 0.18s | Train Acc 86.51% | Val Acc 81.95% | Mem 1004MB
+Epoch  13/30 | Time 15.17s | Compute 14.76s | Comm 0.18s | Train Acc 87.23% | Val Acc 77.28% | Mem 1004MB
+Epoch  14/30 | Time 15.15s | Compute 14.77s | Comm 0.17s | Train Acc 88.00% | Val Acc 84.21% | Mem 1004MB
+Epoch  15/30 | Time 15.17s | Compute 14.77s | Comm 0.18s | Train Acc 88.92% | Val Acc 84.98% | Mem 1004MB
+Epoch  16/30 | Time 15.03s | Compute 14.67s | Comm 0.17s | Train Acc 89.66% | Val Acc 84.14% | Mem 1004MB
+Epoch  17/30 | Time 15.16s | Compute 14.73s | Comm 0.19s | Train Acc 90.43% | Val Acc 87.94% | Mem 1004MB
+Epoch  18/30 | Time 15.22s | Compute 14.83s | Comm 0.18s | Train Acc 91.57% | Val Acc 87.52% | Mem 1004MB
+Epoch  19/30 | Time 15.27s | Compute 14.87s | Comm 0.19s | Train Acc 92.35% | Val Acc 87.11% | Mem 1004MB
+Epoch  20/30 | Time 15.21s | Compute 14.83s | Comm 0.17s | Train Acc 93.10% | Val Acc 89.82% | Mem 1004MB
+Epoch  21/30 | Time 15.12s | Compute 14.69s | Comm 0.19s | Train Acc 94.05% | Val Acc 89.28% | Mem 1004MB
+Epoch  22/30 | Time 15.14s | Compute 14.75s | Comm 0.18s | Train Acc 94.98% | Val Acc 90.83% | Mem 1004MB
+Epoch  23/30 | Time 15.27s | Compute 14.90s | Comm 0.19s | Train Acc 95.87% | Val Acc 90.63% | Mem 1004MB
+Epoch  24/30 | Time 15.15s | Compute 14.74s | Comm 0.18s | Train Acc 96.87% | Val Acc 91.33% | Mem 1004MB
+Epoch  25/30 | Time 15.10s | Compute 14.71s | Comm 0.18s | Train Acc 97.63% | Val Acc 92.39% | Mem 1004MB
+Epoch  26/30 | Time 15.21s | Compute 14.82s | Comm 0.18s | Train Acc 98.29% | Val Acc 93.00% | Mem 1004MB
+Epoch  27/30 | Time 15.12s | Compute 14.73s | Comm 0.18s | Train Acc 98.74% | Val Acc 93.32% | Mem 1004MB
+Epoch  28/30 | Time 15.17s | Compute 14.80s | Comm 0.18s | Train Acc 99.08% | Val Acc 93.36% | Mem 1004MB
+Epoch  29/30 | Time 15.09s | Compute 14.69s | Comm 0.18s | Train Acc 99.29% | Val Acc 93.51% | Mem 1004MB
+Epoch  30/30 | Time 15.24s | Compute 14.84s | Comm 0.18s | Train Acc 99.36% | Val Acc 93.47% | Mem 1004MB
+
+Total training time: 481.38s
+Results saved to ./results_ddp/ddp_gpu1_results.json
+Model saved to ./results_ddp/ddp_gpu1_model.pt
+Done.
